@@ -20,5 +20,17 @@ To use it in your project add the following code in your build.gradle file.
 
     dependencies {
         ...
-        compile "pl.treksoft:navigo-kotlin:0.0.1"
+        compile "pl.treksoft:navigo-kotlin:[version]"
+    }
+
+Use [kotlin-frontend-plugin](https://github.com/Kotlin/kotlin-frontend-plugin) to include Navigo to your project.
+
+    kotlinFrontend {
+        ...
+        npm {
+            ...
+            dependency "navigo"
+            ...
+        }
+        ...
     }
