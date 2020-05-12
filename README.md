@@ -11,26 +11,22 @@ The definition files are based on Navigo version 5.3.1.
 ### How to use
 
 The releases of this project are available from bintray.
-To use it in your project add the following code in your build.gradle file.
+To use it in your project add the following code in your build.gradle.kts file.
 
     repositories {
         ...
-        maven { url = 'https://dl.bintray.com/rjaros/kotlin' }
+        maven { url = uri("https://dl.bintray.com/rjaros/kotlin") }
     }
 
     dependencies {
         ...
-        compile "pl.treksoft:navigo-kotlin:[version]"
+        api("pl.treksoft:navigo-kotlin:$navigoKotlinVersion")
     }
 
-Use [kotlin-frontend-plugin](https://github.com/Kotlin/kotlin-frontend-plugin) to include Navigo to your project.
+Don't forget to include Navigo in your project.
 
-    kotlinFrontend {
+
+    dependencies {
         ...
-        npm {
-            ...
-            dependency "navigo"
-            ...
-        }
-        ...
+        implementation(npm("navigo"))
     }
