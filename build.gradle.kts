@@ -50,7 +50,6 @@ kotlin {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-js"))
     implementation(npm("navigo", "^7.1.2"))
 }
 
@@ -72,12 +71,3 @@ publishing {
 }
 
 setupPublication()
-
-tasks {
-    getByName("JsJar", Jar::class) {
-        from("${project.buildDir}/js/packages/navigo-kotlin/package.json")
-    }
-    getByName("JsIrJar", Jar::class) {
-        from("${project.buildDir}/js/packages/navigo-kotlin-JsIr/package.json")
-    }
-}

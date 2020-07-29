@@ -6,7 +6,7 @@ https://github.com/krasimir/navigo
 
 ### Project info
 
-The definition files are based on Navigo version 5.3.1.
+The definition files are based on Navigo version 7.1.2.
 
 ### How to use
 
@@ -28,5 +28,5 @@ Don't forget to include Navigo in your project.
 
     dependencies {
         ...
-        implementation(npm("navigo"))
+        implementation(npm("navigo", "^7.1.2"))
     }
