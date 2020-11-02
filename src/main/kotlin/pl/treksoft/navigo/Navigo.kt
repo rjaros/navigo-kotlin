@@ -40,6 +40,7 @@ external open class Navigo(root: String? = definedExternally, useHash: Boolean? 
     open fun destroy(): Unit = definedExternally
     open fun lastRouteResolved(): dynamic = definedExternally
     open fun historyAPIUpdateMethod(state: String): Unit = definedExternally
+    open fun hooks(hooks: NavigoHooks): Unit = definedExternally
 }
 
 object Factory {
