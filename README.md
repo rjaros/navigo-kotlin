@@ -10,23 +10,10 @@ The definition files are based on Navigo version 7.1.2.
 
 ### How to use
 
-The releases of this project are available from bintray.
+The artifacts of this project are published to Maven Central.
 To use it in your project add the following code in your build.gradle.kts file.
 
-    repositories {
-        ...
-        maven { url = uri("https://dl.bintray.com/rjaros/kotlin") }
-    }
-
     dependencies {
         ...
-        api("pl.treksoft:navigo-kotlin:$navigoKotlinVersion")
-    }
-
-Don't forget to include Navigo in your project.
-
-
-    dependencies {
-        ...
-        implementation(npm("navigo", "^7.1.2"))
+        api("io.kvision:navigo-kotlin:$navigoKotlinVersion")
     }
